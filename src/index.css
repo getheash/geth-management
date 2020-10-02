@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
 }
 
 code {
@@ -12,6 +13,29 @@ code {
     monospace;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 li a:hover {
   font-weight: 600;
+}
+
+#title {
+  margin-top: 60px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 770px) {
+  #title {
+    font-size: 30px;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  padding: 5px;
 }
