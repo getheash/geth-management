@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./component/navbar";
 import Title from "./component/title";
+import Features from "./component/features";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <NavBar />
       <main className="container">
         <Title />
+        <Features />
       </main>
     </React.Fragment>
   );
