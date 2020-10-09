@@ -36,6 +36,8 @@ li a:hover {
 
 .container {
   max-width: 1000px;
+  width: 100%;
+  margin: 20px auto 0 auto;
   padding: 5px;
 }
 
@@ -58,6 +60,10 @@ li a:hover {
   #features {
     background-color: rgba(245, 245, 245, 0.1);
   }
+
+  #subscription {
+    background-color: rgba(33, 33, 33, 0.8);
+  }
 }
 
 /* Light theme styles*/
@@ -74,4 +80,19 @@ li a:hover {
 
 #features {
   padding: 5px;
+}
+
+#subscription {
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 15px 6px;
+  border-radius: 5px;
+}
+
+#subscription p {
+  margin-left: 5px;
+}
+
+#subscription-form {
+  margin-left: 5px;
+  margin-right: 5px;
 }
