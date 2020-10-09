@@ -3,6 +3,7 @@ import NavBar from "./component/navbar";
 import Title from "./component/title";
 import Features from "./component/features";
 import Subscription from "./component/subscription";
+import SubmitLinks from "./component/submitLinks";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Title />
         <Features />
         <Subscription />
+        <SubmitLinks />
       </main>
     </React.Fragment>
   );
