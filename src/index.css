@@ -54,6 +54,10 @@ li a:hover {
   #intro {
     color: #fff;
   }
+
+  #features {
+    background-color: rgba(245, 245, 245, 0.1);
+  }
 }
 
 /* Light theme styles*/
@@ -66,4 +70,8 @@ li a:hover {
   #intro {
     color: #000;
   }
+}
+
+#features {
+  padding: 5px;
 }
