@@ -12,7 +12,7 @@ const Subscription = () => {
     <div>
       <section id="subscription">
         <p>Please fill the required details for subscription:</p>
-        <form id="subscription-form" onSubmit={handleSubmit}>
+        <form id="subscriptionForm" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="name">Name</label>
@@ -39,7 +39,7 @@ const Subscription = () => {
             <div className="form-group col-md-6">
               <label for="url">Copyright Website</label>
               <input
-                type="text"
+                type="url"
                 className="form-control"
                 id="url"
                 placeholder="Enter your website url"
@@ -51,7 +51,7 @@ const Subscription = () => {
                 <i>optional</i>
               </label>
               <input
-                type="text"
+                type="url"
                 className="form-control"
                 id="urlOptional"
                 placeholder="Enter your 2nd website url"
