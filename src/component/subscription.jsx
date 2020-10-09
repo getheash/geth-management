@@ -97,7 +97,7 @@ const Subscription = () => {
           {submit ? (
             <div className="success-message">
               Success! Look out for an email with payment info from us. Thank
-              you.{" "}
+              you.
             </div>
           ) : null}
         </form>
