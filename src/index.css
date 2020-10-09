@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121212;
 }
 
 code {
@@ -37,5 +36,42 @@ li a:hover {
 
 .container {
   max-width: 1000px;
+  padding: 5px;
+}
+
+#intro {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+/* Dark theme styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+
+  #title,
+  #intro {
+    color: #fff;
+  }
+
+  #features {
+    background-color: rgba(245, 245, 245, 0.1);
+  }
+}
+
+/* Light theme styles*/
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+  }
+
+  #title,
+  #intro {
+    color: #000;
+  }
+}
+
+#features {
   padding: 5px;
 }
