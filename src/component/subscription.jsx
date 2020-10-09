@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Subscription = () => {
+  const [submit, setSubmit] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmit(true);
+  };
+
   return (
     <div>
       <section id="subscription">
         <p>Please fill the required details for subscription:</p>
-        <form id="subscription-form">
+        <form id="subscription-form" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="name">Name</label>
@@ -87,6 +94,12 @@ const Subscription = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
+          {submit ? (
+            <div className="success-message">
+              Success! Look out for an email with payment info from us. Thank
+              you.{" "}
+            </div>
+          ) : null}
         </form>
       </section>
     </div>
