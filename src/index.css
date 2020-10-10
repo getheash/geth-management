@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
 code {
@@ -48,10 +49,11 @@ li a:hover {
 
 /* Dark theme styles */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
+  :root {
+    --background-element: rgba(33, 33, 33, 0.8);
+    --background: #121212;
   }
-
+  /*
   #title,
   #intro {
     color: #fff;
@@ -63,10 +65,10 @@ li a:hover {
 
   #subscription {
     background-color: rgba(33, 33, 33, 0.8);
-  }
+  }*/
 }
 
-/* Light theme styles*/
+/* Light theme styles
 @media (prefers-color-scheme: light) {
   body {
     background-color: #ffffff;
@@ -76,14 +78,15 @@ li a:hover {
   #intro {
     color: #000;
   }
-}
+}*/
 
 #features {
   padding: 5px;
 }
 
 #subscription,
-#submitLinks {
+#submitLinks,
+#contact {
   background-color: rgba(33, 33, 33, 0.8);
   padding: 15px 6px;
   border-radius: 5px;
@@ -92,7 +95,9 @@ li a:hover {
 }
 
 #subscription p,
-#submitLinks p {
+#submitLinks p,
+#contact h3,
+#contact p {
   margin-left: 5px;
 }
 
@@ -100,4 +105,8 @@ li a:hover {
 #submitLinksForm {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+#contact h3 {
+  font-weight: 400;
 }

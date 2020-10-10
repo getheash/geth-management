@@ -4,6 +4,7 @@ import Title from "./component/title";
 import Features from "./component/features";
 import Subscription from "./component/subscription";
 import SubmitLinks from "./component/submitLinks";
+import Contact from "./component/contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Features />
         <Subscription />
         <SubmitLinks />
+        <Contact />
       </main>
     </React.Fragment>
   );
