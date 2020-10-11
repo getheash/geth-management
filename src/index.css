@@ -113,3 +113,9 @@ li a:hover {
   margin-top: 8px;
   padding: 4px;
 }
+
+.footer-copyright {
+  padding: 20px 5px 10px 5px;
+  margin-top: 10px;
+  background-color: #0f5bf6;
+}
