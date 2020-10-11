@@ -5,7 +5,7 @@ const NavBar = () => {
     <div>
       <nav className="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
         <a className="navbar-brand" href="#">
-          GTS
+          GM
         </a>
         <button
           className="navbar-toggler"
