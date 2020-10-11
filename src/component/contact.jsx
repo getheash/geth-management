@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section id="contact">
+      <section id="contact" className="border border-white">
         <h3>Contact us</h3>
         <p>
           If you need more information or do you have any queries, please
