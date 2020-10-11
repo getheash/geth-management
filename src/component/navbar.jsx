@@ -20,22 +20,39 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
+            {/* added data-toggle & data-target attributes to <li> so that navbar will collapse when a link is clicked*/}
+            <li
+              className="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               <a className="nav-link text-white" href="#features">
                 Features
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               <a className="nav-link text-white" href="#subscription">
                 Subscription
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               <a className="nav-link text-white" href="#submitLinks">
                 Submit Links
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               <a className="nav-link text-white" href="#contact">
                 Contact
               </a>
