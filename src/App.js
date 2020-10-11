@@ -5,6 +5,7 @@ import Features from "./component/features";
 import Subscription from "./component/subscription";
 import SubmitLinks from "./component/submitLinks";
 import Contact from "./component/contact";
+import FooterCopyright from "./component/footerCopyright";
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
         <SubmitLinks />
         <Contact />
       </main>
+      <footer>
+        <FooterCopyright />
+      </footer>
     </React.Fragment>
   );
 };
