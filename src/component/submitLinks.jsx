@@ -25,7 +25,7 @@ const SubmitLinks = () => {
               placeholder="Enter your Identity code"
               required
             />
-            <small id="identityCodeHelp" className="form-text text-muted">
+            <small id="identityCodeHelp" className="form-text">
               You could find the idenity code in Subscription Payment
               Confirmation email
             </small>
@@ -51,7 +51,7 @@ const SubmitLinks = () => {
               id="urlLinks"
               placeholder="Enter the website link"
             />
-            <small id="urlLinksHelp" className="form-text text-muted">
+            <small id="urlLinksHelp" className="form-text">
               Please use the comment section if you would like to submit more
               than three links
             </small>
@@ -71,7 +71,7 @@ const SubmitLinks = () => {
             Submit
           </button>
           {submit ? (
-            <div className="success-message">
+            <div className="success-message bg-primary rounded-sm text-white">
               Thank you. We will send you a confirmation email when the links
               have been taken down successfully.
             </div>

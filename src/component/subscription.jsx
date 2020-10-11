@@ -95,7 +95,7 @@ const Subscription = () => {
             Submit
           </button>
           {submit ? (
-            <div className="success-message">
+            <div className="success-message bg-primary rounded-sm text-white">
               Success! Look out for an email with payment info from us. Thank
               you.
             </div>
