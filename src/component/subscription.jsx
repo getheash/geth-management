@@ -10,7 +10,7 @@ const Subscription = () => {
 
   return (
     <div>
-      <section id="subscription">
+      <section id="subscription" className="border border-primary">
         <p>Please fill the required details for subscription:</p>
         <form id="subscriptionForm" onSubmit={handleSubmit}>
           <div className="form-row">

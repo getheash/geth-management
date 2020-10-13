@@ -10,7 +10,7 @@ const SubmitLinks = () => {
 
   return (
     <div>
-      <section id="submitLinks">
+      <section id="submitLinks" className="border border-primary">
         <p>
           Please use the form to submit website links that need to be taken
           down:
