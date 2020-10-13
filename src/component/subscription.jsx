@@ -13,6 +13,7 @@ const Subscription = () => {
       <section id="subscription" className="border border-primary">
         <p>Please fill the required details for subscription:</p>
         <form name="subscription" id="subscriptionForm" onSubmit={handleSubmit}>
+          <input type="hidden" name="form-name" value="subscription" />
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="name">Name</label>
@@ -43,7 +44,7 @@ const Subscription = () => {
               <input
                 type="url"
                 className="form-control"
-                name="url"
+                name="website"
                 id="url"
                 placeholder="Enter your website url"
                 required
@@ -56,7 +57,7 @@ const Subscription = () => {
               <input
                 type="url"
                 className="form-control"
-                name="urlOptional"
+                name="url-optional"
                 id="urlOptional"
                 placeholder="Enter your 2nd website url"
               />
@@ -67,7 +68,7 @@ const Subscription = () => {
             <input
               type="text"
               className="form-control"
-              name="copyrightTitle"
+              name="copyright-title"
               id="copyrightTitle"
               placeholder="Enter the title of your copyright content"
               required
@@ -77,7 +78,7 @@ const Subscription = () => {
             <label for="subscriptionPlan">Subscription Plan</label>
             <select
               className="form-control"
-              name="subscriptionPlan"
+              name="subscription-plan"
               id="subscriptionPlan"
               required
             >
@@ -99,7 +100,7 @@ const Subscription = () => {
             <input
               type="text"
               className="form-control"
-              name="referralCode"
+              name="referral-code"
               id="referralCode"
               placeholder="Enter referral code"
             />

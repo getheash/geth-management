@@ -15,12 +15,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -34,10 +34,29 @@
       src="https://kit.fontawesome.com/900c52cd77.js"
       crossorigin="anonymous"
     ></script>
-    <title>React App</title>
+    <title>Geth Management</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- A little help for the Netlify bots for forms rendering-->
+    <!--netlify html format for subscription-form-->
+    <form name="subscription" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="url" name="website" />
+      <input type="url" name="url-optional" />
+      <input type="text" name="copyright-title" />
+      <select name="subscription-plan"></select>
+      <input type="text" name="referral-code" />
+    </form>
+    <!--netlify html format for submit-links-form-->
+    <form name="submit-links" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="identity" />
+      <input type="url" name="url-link1" />
+      <input type="url" name="url-link2" />
+      <input type="url" name="url-link3" />
+      <textarea name="comment"></textarea>
+    </form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
