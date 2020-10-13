@@ -42,8 +42,13 @@ li a:hover {
   padding: 5px;
 }
 
-#intro {
+#intro,
+#notice {
   text-align: center;
+}
+
+#notice {
+  margin-top: 5px;
 }
 
 #subscription,
@@ -67,6 +72,16 @@ li a:hover {
 #submitLinksForm {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media (max-width: 485px) {
+  #subscription,
+  #submitLinks,
+  #contact,
+  #features {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 #contact h3 {
@@ -105,6 +120,19 @@ li a:hover {
   width: calc(100% / 3);
   margin: 10px;
   border-radius: 5px;
+}
+
+@media (max-width: 770px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature-box {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
 
 .step {

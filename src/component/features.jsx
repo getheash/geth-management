@@ -62,6 +62,9 @@ const Features = () => {
             </div>
           </div>
         </div>
+        <p id="notice">
+          <i>Please note that we do not provide any kind of legal advice.</i>
+        </p>
       </section>
     </div>
   );
