@@ -15,43 +15,47 @@ const SubmitLinks = () => {
           Please use the form to submit website links that need to be taken
           down:
         </p>
-        <form id="submitLinksForm" onSubmit={handleSubmit}>
+        <form name="submitLinks" id="submitLinksForm" onSubmit={handleSubmit}>
           <div className="form-group">
             <label for="identityCode">Identity Code</label>
             <input
               type="text"
               className="form-control"
+              name="identity"
               id="identityCode"
               placeholder="Enter your Identity code"
               required
             />
             <small id="identityCodeHelp" className="form-text">
-              You could find the idenity code in Subscription Payment
-              Confirmation email
+              Identity code can be found in Subscription Payment Confirmation
+              email
             </small>
           </div>
           <div className="form-group">
-            <label for="urlLinks">Links to be taken down</label>
+            <label for="urlLink">Links to be taken down</label>
             <input
               type="url"
               className="form-control"
-              id="urlLinks"
+              name="urlLink"
+              id="urlLink"
               placeholder="Enter the website link"
               required
             />
             <input
               type="url"
               className="form-control"
-              id="urlLinks"
+              name="urlLink"
+              id="urlLink"
               placeholder="Enter the website link"
             />
             <input
               type="url"
               className="form-control"
-              id="urlLinks"
+              name="urlLink"
+              id="urlLink"
               placeholder="Enter the website link"
             />
-            <small id="urlLinksHelp" className="form-text">
+            <small id="urlLinkHelp" className="form-text">
               Please use the comment section if you would like to submit more
               than three links
             </small>
@@ -62,9 +66,10 @@ const SubmitLinks = () => {
             </label>
             <textarea
               className="form-control"
+              name="comment"
               id="comment"
               rows="3"
-              placeholder="Please enter your comments..."
+              placeholder="Enter your comments..."
             ></textarea>
           </div>
           <button type="submit" className="btn btn-primary">

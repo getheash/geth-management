@@ -11,7 +11,7 @@ const Contact = () => {
           <i style={{ color: "dodgerblue" }} className="fas fa-envelope"></i> :
         </p>
         <p>
-          If you are a subscriber, please mention your idenity code in the
+          If you are a subscriber, please mention your identity code in the
           subject line for quick assistance. We look forward to hear from you.
         </p>
       </section>

@@ -63,7 +63,7 @@ const Features = () => {
           </div>
         </div>
         <p id="notice">
-          <i>Please note that we do not provide any kind of legal advice.</i>
+          <i>Please note that we do not provide any kind of legal service.</i>
         </p>
       </section>
     </div>

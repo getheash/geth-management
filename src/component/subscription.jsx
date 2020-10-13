@@ -12,13 +12,14 @@ const Subscription = () => {
     <div>
       <section id="subscription" className="border border-primary">
         <p>Please fill the required details for subscription:</p>
-        <form id="subscriptionForm" onSubmit={handleSubmit}>
+        <form name="subscription" id="subscriptionForm" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="name">Name</label>
               <input
                 type="text"
                 className="form-control"
+                name="name"
                 id="name"
                 placeholder="Enter your first and last name"
                 required
@@ -29,6 +30,7 @@ const Subscription = () => {
               <input
                 type="email"
                 className="form-control"
+                name="email"
                 id="email"
                 placeholder="Enter your email"
                 required
@@ -41,6 +43,7 @@ const Subscription = () => {
               <input
                 type="url"
                 className="form-control"
+                name="url"
                 id="url"
                 placeholder="Enter your website url"
                 required
@@ -53,6 +56,7 @@ const Subscription = () => {
               <input
                 type="url"
                 className="form-control"
+                name="urlOptional"
                 id="urlOptional"
                 placeholder="Enter your 2nd website url"
               />
@@ -63,6 +67,7 @@ const Subscription = () => {
             <input
               type="text"
               className="form-control"
+              name="copyrightTitle"
               id="copyrightTitle"
               placeholder="Enter the title of your copyright content"
               required
@@ -70,13 +75,20 @@ const Subscription = () => {
           </div>
           <div className="form-group">
             <label for="subscriptionPlan">Subscription Plan</label>
-            <select className="form-control" id="subscriptionPlan" required>
+            <select
+              className="form-control"
+              name="subscriptionPlan"
+              id="subscriptionPlan"
+              required
+            >
               <option disabled selected value>
                 Choose your subscription plan
               </option>
-              <option value="one">1 month subscription - $350</option>
+              <option value="one">
+                1 month subscription - $350 for unlimited takedowns
+              </option>
               <option value="three">
-                3 month subscription - $900 ($150 off)
+                3 month subscription - $900 ($150 off) for unlimited takedowns
               </option>
             </select>
           </div>
@@ -87,6 +99,7 @@ const Subscription = () => {
             <input
               type="text"
               className="form-control"
+              name="referralCode"
               id="referralCode"
               placeholder="Enter referral code"
             />
