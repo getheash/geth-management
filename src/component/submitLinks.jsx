@@ -15,8 +15,13 @@ const SubmitLinks = () => {
           Please use the form to submit website links that need to be taken
           down:
         </p>
-        <form name="submit-links" id="submitLinksForm" onSubmit={handleSubmit}>
-          <input type="hidden" name="form-name" value="submit-links" />
+        <form
+          name="links"
+          id="submitLinksForm"
+          method="post"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="links" />
           <div className="form-group">
             <label for="identityCode">Identity Code</label>
             <input
@@ -37,7 +42,7 @@ const SubmitLinks = () => {
             <input
               type="url"
               className="form-control"
-              name="url-link1"
+              name="first"
               id="urlLink"
               placeholder="Enter the website link"
               required
@@ -45,14 +50,14 @@ const SubmitLinks = () => {
             <input
               type="url"
               className="form-control"
-              name="url-link2"
+              name="second"
               id="urlLink"
               placeholder="Enter the website link"
             />
             <input
               type="url"
               className="form-control"
-              name="url-link3"
+              name="third"
               id="urlLink"
               placeholder="Enter the website link"
             />

@@ -12,8 +12,13 @@ const Subscription = () => {
     <div>
       <section id="subscription" className="border border-primary">
         <p>Please fill the required details for subscription:</p>
-        <form name="subscription" id="subscriptionForm" onSubmit={handleSubmit}>
-          <input type="hidden" name="form-name" value="subscription" />
+        <form
+          name="subscribe"
+          id="subscriptionForm"
+          method="post"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="subscribe" />
           <div className="form-row">
             <div className="form-group col-md-6">
               <label for="name">Name</label>
@@ -78,7 +83,7 @@ const Subscription = () => {
             <label for="subscriptionPlan">Subscription Plan</label>
             <select
               className="form-control"
-              name="subscription-plan"
+              name="plan"
               id="subscriptionPlan"
               required
             >
