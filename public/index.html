@@ -46,15 +46,13 @@
       <input type="url" name="website" />
       <input type="url" name="url-optional" />
       <input type="text" name="copyright-title" />
-      <select name="plan"></select>
+      <input type="radio" name="subscription-plan"></select>
       <input type="text" name="referral-code" />
     </form>
     <!--netlify html format for submit-links-form-->
-    <form name="links" netlify netlify-honeypot="bot-field" hidden>
+    <form name="submit-links" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="identity" />
-      <input type="url" name="first" />
-      <input type="url" name="second" />
-      <input type="url" name="third" />
+      <textarea name="links"></textarea>
       <textarea name="comment"></textarea>
     </form>
     <div id="root"></div>

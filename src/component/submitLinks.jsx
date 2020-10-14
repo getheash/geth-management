@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const SubmitLinks = () => {
-  const [submit, setSubmit] = useState(false);
+ /* const [submit, setSubmit] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmit(true);
-  };
+  }; */
 
   return (
     <div>
@@ -16,12 +16,11 @@ const SubmitLinks = () => {
           down:
         </p>
         <form
-          name="links"
+          name="submit-links"
           id="submitLinksForm"
           method="post"
-          onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="links" />
+          <input type="hidden" name="form-name" value="submit-links" />
           <div className="form-group">
             <label for="identityCode">Identity Code</label>
             <input
@@ -38,33 +37,17 @@ const SubmitLinks = () => {
             </small>
           </div>
           <div className="form-group">
-            <label for="urlLink">Links to be taken down</label>
-            <input
-              type="url"
+            <label for="links">
+              Links to be taken down
+            </label>
+            <textarea
               className="form-control"
-              name="first"
-              id="urlLink"
-              placeholder="Enter the website link"
+              name="links"
+              id="links"
+              rows="3"
+              placeholder="Enter the website links..."
               required
-            />
-            <input
-              type="url"
-              className="form-control"
-              name="second"
-              id="urlLink"
-              placeholder="Enter the website link"
-            />
-            <input
-              type="url"
-              className="form-control"
-              name="third"
-              id="urlLink"
-              placeholder="Enter the website link"
-            />
-            <small id="urlLinkHelp" className="form-text">
-              Please use the comment section if you would like to submit more
-              than three links
-            </small>
+            ></textarea>
           </div>
           <div className="form-group">
             <label for="comment">
@@ -81,12 +64,12 @@ const SubmitLinks = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          {submit ? (
+          {/*{submit ? (
             <div className="success-message bg-primary rounded-sm text-white">
               Thank you. We will send you a confirmation email when the links
               have been taken down successfully.
             </div>
-          ) : null}
+          ) : null} */}
         </form>
       </section>
     </div>
