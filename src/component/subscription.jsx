@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const Subscription = () => {
-  const [submit, setSubmit] = useState(false);
+  /* const [submit, setSubmit] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSubmit(true);
-  };
+    setSubmit(true); 
+  }; */
 
   return (
     <div>
@@ -16,7 +16,6 @@ const Subscription = () => {
           name="subscribe"
           id="subscriptionForm"
           method="post"
-          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="subscribe" />
           <div className="form-row">
@@ -81,22 +80,18 @@ const Subscription = () => {
           </div>
           <div className="form-group">
             <label for="subscriptionPlan">Subscription Plan</label>
-            <select
-              className="form-control"
-              name="plan"
-              id="subscriptionPlan"
-              required
-            >
-              <option disabled selected value>
-                Choose your subscription plan
-              </option>
-              <option value="one">
+            <div className="form-check">
+            <input className="form-check-input" type="radio" name="subscription-plan" id="plan1" value="option1" checked />
+            <label className="form-check-label" for="plan1">
                 1 month subscription - $350 for unlimited takedowns
-              </option>
-              <option value="three">
+            </label>
+            </div>
+            <div className="form-check">
+            <input className="form-check-input" type="radio" name="subscription-plan" id="plan2" value="option2" />
+            <label className="form-check-label" for="plan2">
                 3 month subscription - $900 ($150 off) for unlimited takedowns
-              </option>
-            </select>
+            </label>
+            </div>
           </div>
           <div className="form-group">
             <label for="referralCode">
@@ -113,12 +108,12 @@ const Subscription = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          {submit ? (
+          {/* {submit ? (
             <div className="success-message bg-primary rounded-sm text-white">
               Success! Look out for an email with payment info from us. Thank
               you.
             </div>
-          ) : null}
+          ) : null} */}
         </form>
       </section>
     </div>
