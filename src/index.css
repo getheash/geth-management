@@ -14,8 +14,16 @@ body {
   box-sizing: border-box;
 }
 
-li a:hover {
+.navbar-brand {
   font-weight: 600;
+}
+
+li a {
+  font-weight: 600;
+}
+
+li a:hover {
+  font-weight: 700;
 }
 
 #title {
@@ -91,7 +99,7 @@ li a:hover {
 .footer-copyright {
   padding: 20px 5px 10px 5px;
   margin-top: 10px;
-  background-color: #0f5bf6;
+  background-color: #1269ec;
 }
 
 .icon {
@@ -139,4 +147,8 @@ li a:hover {
   padding: 5px;
   margin: 5px;
   text-align: center;
+}
+
+.btn {
+  font-weight: 600;
 }

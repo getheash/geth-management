@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 
 const Subscription = () => {
-  /* const [submit, setSubmit] = useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmit(true); 
-  }; */
-
   return (
     <div>
       <section id="subscription" className="border border-primary">
-        <p>Please fill the required details for subscription:</p>
+        <p>If you are a new subscriber, please fill the required details:</p>
         <form
           name="subscribe"
           id="subscriptionForm"
@@ -108,12 +101,9 @@ const Subscription = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          {/* {submit ? (
-            <div className="success-message bg-primary rounded-sm text-white">
-              Success! Look out for an email with payment info from us. Thank
-              you.
-            </div>
-          ) : null} */}
+          <small id="submitButtonHelp" className="form-text">
+              Upon successful submission, please look out for an email with payment info from us. 
+            </small>
         </form>
       </section>
     </div>
