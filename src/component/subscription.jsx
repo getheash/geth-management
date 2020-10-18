@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Subscription = () => {
   return (
@@ -59,17 +59,6 @@ const Subscription = () => {
                 placeholder="Enter your 2nd website url"
               />
             </div>
-          </div>
-          <div className="form-group">
-            <label for="copyrightTitle">Copyright Title</label>
-            <input
-              type="text"
-              className="form-control"
-              name="copyright-title"
-              id="copyrightTitle"
-              placeholder="Enter the title of your copyright content"
-              required
-            />
           </div>
           <div className="form-group">
             <label for="subscriptionPlan">Subscription Plan</label>

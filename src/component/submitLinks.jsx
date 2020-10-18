@@ -1,13 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const SubmitLinks = () => {
- /* const [submit, setSubmit] = useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmit(true);
-  }; */
-
   return (
     <div>
       <section id="submitLinks" className="border border-primary">
@@ -37,6 +30,17 @@ const SubmitLinks = () => {
             </small>
           </div>
           <div className="form-group">
+            <label for="copyrightTitle">Copyright Title</label>
+            <input
+              type="text"
+              className="form-control"
+              name="copyright-title"
+              id="copyrightTitle"
+              placeholder="Enter the title of your copyright content"
+              required
+            />
+          </div>
+          <div className="form-group">
             <label for="links">
               Links to be taken down
             </label>
@@ -64,12 +68,6 @@ const SubmitLinks = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          {/*{submit ? (
-            <div className="success-message bg-primary rounded-sm text-white">
-              Thank you. We will send you a confirmation email when the links
-              have been taken down successfully.
-            </div>
-          ) : null} */}
         </form>
       </section>
     </div>
