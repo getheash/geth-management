@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
-        <a className="navbar-brand text-white" href="#">
+        <a className="navbar-brand text-white" href="https://www.gethmanagement.com/">
           GM
         </a>
         <button

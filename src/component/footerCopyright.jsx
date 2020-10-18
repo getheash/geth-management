@@ -5,7 +5,7 @@ const FooterCopyright = () => {
     <div style={{ height: "80px" }}>
       <div className="footer-copyright h-100 w-100 text-center text-white">
         &copy; Copyright 2020{" "}
-        <a href="#" className="text-white">
+        <a href="https://www.gethmanagement.com/" className="text-white">
           Geth Management
         </a>{" "}
         - All Rights Reserved
