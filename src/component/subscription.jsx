@@ -46,6 +46,9 @@ const Subscription = () => {
                 placeholder="Enter your website url"
                 required
               />
+              <small id="urlHelp" className="form-text">
+                <i>please check if your URL has 'https://' at the beginning for valid entry</i>
+              </small>
             </div>
             <div className="form-group col-md-6">
               <label for="urlOptional">
