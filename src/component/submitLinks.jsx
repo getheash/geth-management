@@ -12,6 +12,7 @@ const SubmitLinks = () => {
           name="submit-links"
           id="submitLinksForm"
           method="post"
+          data-netlify-recaptcha="true"
         >
           <input type="hidden" name="form-name" value="submit-links" />
           <div className="form-group">
@@ -65,6 +66,7 @@ const SubmitLinks = () => {
               placeholder="Enter your comments..."
             ></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
