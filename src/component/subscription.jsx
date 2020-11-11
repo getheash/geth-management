@@ -74,13 +74,13 @@ const Subscription = () => {
             <div className="form-check">
             <input className="form-check-input" type="radio" name="subscription-plan" id="plan2" value="option2" />
             <label className="form-check-label" for="plan2">
-                3 month subscription - $900 ($150 off) for unlimited takedowns
+                3 months subscription - $900 ($150 off) for unlimited takedowns
             </label>
             </div>
             <div className="form-check">
             <input className="form-check-input" type="radio" name="subscription-plan" id="plan3" value="option3" />
             <label className="form-check-label" for="plan3">
-                6 month subscription - $1650 ($450 off) for unlimited takedowns
+                6 months subscription - $1650 ($450 off) for unlimited takedowns
             </label>
             </div>
             <div className="form-check">
