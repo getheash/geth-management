@@ -77,6 +77,18 @@ const Subscription = () => {
                 3 month subscription - $900 ($150 off) for unlimited takedowns
             </label>
             </div>
+            <div className="form-check">
+            <input className="form-check-input" type="radio" name="subscription-plan" id="plan3" value="option3" />
+            <label className="form-check-label" for="plan3">
+                6 month subscription - $1650 ($450 off) for unlimited takedowns
+            </label>
+            </div>
+            <div className="form-check">
+            <input className="form-check-input" type="radio" name="subscription-plan" id="plan4" value="option4" />
+            <label className="form-check-label" for="plan4">
+                1 year subscription - $3100 ($1100 off) for unlimited takedowns
+            </label>
+            </div>
           </div>
           <div className="form-group">
             <label for="referralCode">
