@@ -6,6 +6,7 @@ import Subscription from "./component/subscription";
 import SubmitLinks from "./component/submitLinks";
 import Contact from "./component/contact";
 import FooterCopyright from "./component/footerCopyright";
+import Testimonies from "./component/testimonies";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Features />
         <Subscription />
         <SubmitLinks />
+        <Testimonies />
         <Contact />
       </main>
       <footer>

@@ -53,6 +53,15 @@ const NavBar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
+              <a className="nav-link text-white" href="#testimonies">
+                Testimonies
+              </a>
+            </li>
+            <li
+              className="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
               <a className="nav-link text-white" href="#contact">
                 Contact
               </a>
