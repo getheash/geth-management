@@ -16,6 +16,12 @@ const Testimonies = () => {
                     </p>
                 </div>
             </div>
+            <div className="testimony-box">
+                <div className="persephanii">
+                    <p><i>
+                    Working with Geth is the best business decision I have ever made. When I started working with him I was very stressed out about how my content was being spread around the internet, it got to a point where I became discouraged and wanted to stop creating. Once I started working with him I immediately felt relief, he was very open with communication and on top of everything. When we started I sent him over a few things to flag that I'd been able to spot out and he responded that had already taken care of it. By hiring him I was able to get back in to my creative flow, I recommend him to everyone he is very easy going and professional. He is more than competent in his profession - <b>Persephanii</b></i> <a href="https://twitter.com/Persephaniii" target="_blank" rel="noreferrer"><i style={{ color: "dodgerblue" }} className="fab fa-twitter"></i></a> <a href="https://www.instagram.com/persephanii/" target="_blank" rel="noreferrer"><i style={{ color: "dodgerblue" }} className="fab fa-instagram"></i></a></p>
+                </div>
+            </div>
         </div>
         </section>
         </div>
