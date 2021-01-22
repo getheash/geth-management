@@ -4,7 +4,7 @@ const Testimonies = () => {
     return (
         <div>
         <section id="testimonies" className="border border-primary">
-        <h3>Testimonies</h3>
+        <h3>Testimonials</h3>
         <div className="testimony">
             <div className="testimony-box">
                 <div className="rhonda">

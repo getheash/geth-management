@@ -54,7 +54,7 @@ const NavBar = () => {
               data-target=".navbar-collapse.show"
             >
               <a className="nav-link text-white" href="#testimonies">
-                Testimonies
+                Testimonials
               </a>
             </li>
             <li
